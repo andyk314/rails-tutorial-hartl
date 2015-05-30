@@ -33,7 +33,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring'
@@ -42,7 +41,8 @@ end
 group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace'
-  # gem 'guard-minitest'
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 group :production do

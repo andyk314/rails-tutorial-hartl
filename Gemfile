@@ -49,4 +49,6 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor', '0.0.2'
+  # Use Puma as the server in production
+  gem 'puma', '2.11.1'
 end
